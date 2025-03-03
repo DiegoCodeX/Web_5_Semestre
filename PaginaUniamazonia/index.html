@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video en HTML</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">UniAmazonia</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Universidad
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+
+                            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Programas
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Sedes
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Accsos 
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="video-container">
+            <video id="miVideo" autoplay loop muted>
+                <source src="./Video recortado.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="container-fluid mt-0"> <!-- Contenedor sin margen superior -->
+            <div class="row mt-0 justify-content-center"> 
+                <div class="col-lg-4 col-md-6 col-12 p-3 text-white" id="uno">
+                    <img id="imgamazonia" src="./universidad de la amazonia.jpg" alt="Universidad de la Amazonia">
+                    <p id="textouno">
+                        La Universidad de la Amazonia es una institución pública en Florencia, Caquetá, enfocada en el
+                        desarrollo sostenible de la región amazónica. Ofrece programas de pregrado y posgrado en diversas
+                        áreas, con énfasis en investigación y tecnología.
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 p-3" id="dos">
+                    <h2>Carreras y Facultades</h2>
+                    <ul>
+                        <li><strong>Ciencias Agropecuarias:</strong> Ingeniería Agroecológica, Zootecnia, Ingeniería
+                            Forestal</li>
+                        <li><strong>Ciencias Básicas:</strong> Biología, Química</li>
+                        <li><strong>Ciencias Humanas y Educación:</strong> Lic. Lengua Castellana e Inglés, Psicología</li>
+                        <li><strong>Ciencias Económicas:</strong> Administración de Empresas, Contaduría Pública</li>
+                        <li><strong>Ingeniería:</strong> Ingeniería de Sistemas, Ingeniería Agroindustrial</li>
+                        <li><strong>Derecho y Ciencias Políticas:</strong> Derecho</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 p-3 text-white" id="tres">
+                    <h2>Contacto y Noticias</h2>
+                    <div class="contact-info">
+                        <p>📍 Florencia, Caquetá, Colombia</p>
+                        <p>📞 (+57) 608 4340048</p>
+                        <p>📧 info@uniamazonia.edu.co</p>
+                    </div>
+                    <h3>Últimas Noticias</h3>
+                    <ul class="news">
+                        <li>📌 Convocatoria abierta para becas de investigación 2025.</li>
+                        <li>📌 Nueva sede para la Facultad de Ingeniería en 2024.</li>
+                        <li>📌 Congreso de Medio Ambiente y Desarrollo.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <ul class="nav nav-pills">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading1">First</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading2">Second</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+                      <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+              <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+                <h4 id="scrollspyHeading1">First heading</h4>
+                <p>...</p>
+                <h4 id="scrollspyHeading2">Second heading</h4>
+                <p>...</p>
+                <h4 id="scrollspyHeading3">Third heading</h4>
+                <p>...</p>
+                <h4 id="scrollspyHeading4">Fourth heading</h4>
+                <p>...</p>
+                <h4 id="scrollspyHeading5">Fifth heading</h4>
+                <p>...</p>
+              </div>
+            
+        </div>
+        
+    </header>
+
+    <script src="./js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
