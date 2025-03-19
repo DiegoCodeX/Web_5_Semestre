@@ -1,0 +1,12 @@
+li {
+  list-style: none;
+}
+li li {
+  display: inline-block;
+}
+li a {
+  text-decoration: none;
+  color: red;
+}
+
+/*# sourceMappingURL=styles.css.map */

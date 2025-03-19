@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 30px;
+}
+
+.hero {
+    grid-column: span 4;
+    background: rgb(180, 216, 228);
+    padding: 110px;
+    text-align: start;
+}
+
+.service,
+.elb,
+.elc,
+.eld,
+.ultimo {
+    padding: 80px;
+    text-align: start;
+}
+
+.elb,
+.elc,
+.eld {
+    text-align: start;
+}
+.service img{
+
+    width: 10%;
+    max-width: 300px;
+    border-radius: 50px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    margin-right: 30px; 
+}
+
+
+#triangulo {
+    width: 10%;
+    max-width: 300px;
+    
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    margin-right: 30px;
+}
+#letra {
+
+    max-width: 30px;
+    border-radius: 50px;
+    height: auto;
+    text-align: right;
+    display: block;
+  
+   
+}
+.service img{
+    width: 10%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    margin-right: 300px;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+
+#uno {
+    background-color: rgb(185, 185, 255);
+}
+
+#dos {
+    background-color: rgb(196, 196, 244);
+}
+
+#tres {
+    background-color: rgb(213, 213, 249);
+}
+
+#cuatro {
+    background-color: rgb(223, 223, 249);
+}
+
+.elb {
+    background: rgb(216, 212, 212);
+    grid-column: span 4;
+}
+
+.elc {
+    background: rgb(239, 215, 219);
+    grid-column: span 4;
+}
+
+.eld {
+    background: rgb(245, 231, 234);
+    grid-column: span 4;
+}
+
+.ultimo {
+    background: rgb(116, 116, 248);
+    grid-column: span 4;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        grid-column: span 2;
+    }
+
+    .service {
+        grid-column: span 1;
+    }
+
+    .elb,
+    .elc {
+        grid-column: span 2;
+    }
+
+    .eld,
+    .ultimo {
+        grid-column: span 2;
+    }
+    .service h4, .service p {
+        display: none; 
+    }
+    .elb h4 , .elc h4, .eld h4, .elb p , .elc p , .eld p {
+        display: none; 
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero,
+    .service,
+    .elb,
+    .elc,
+    .eld,
+    .ultimo {
+        grid-column: span 1;
+    }
+    .service h4, .service p {
+        display: none; 
+    }
+   
+}

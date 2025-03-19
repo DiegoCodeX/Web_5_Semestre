@@ -1,0 +1,14 @@
+#boton{
+list-style: none;
+border: solid black;
+width: 200px;
+height: 80px;
+text-align: center;
+border-radius: 15px;
+font-size: 4rem;
+background-color: rgb(0, 200, 0);
+&:hover{
+background-color: yellow;
+
+}
+}
