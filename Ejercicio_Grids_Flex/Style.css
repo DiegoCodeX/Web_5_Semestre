@@ -1,21 +1,24 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    padding: 30px;
+    margin: auto;
 }
 
 .hero {
     grid-column: span 4;
     background: rgb(180, 216, 228);
-    padding: 110px;
-    text-align: start;
+    padding: 60px;
+    text-align: center;
+    font-size: 18px;
 }
 
 .service,
@@ -23,74 +26,33 @@
 .elc,
 .eld,
 .ultimo {
-    padding: 80px;
-    text-align: start;
+    padding: 30px;
+    text-align: center;
+    font-size: 16px;
 }
 
-.elb,
-.elc,
-.eld {
-    text-align: start;
-}
-.service img{
-
-    width: 10%;
-    max-width: 300px;
-    border-radius: 50px;
+.service img {
+    width: 80%;
+    max-width: 250px;
+    border-radius: 10px;
     height: auto;
     display: block;
-    margin: 20px auto;
-    margin-right: 30px; 
+    margin: 15px auto;
 }
-
 
 #triangulo {
-    width: 10%;
-    max-width: 300px;
-    
+    width: 80%;
+    max-width: 200px;
     height: auto;
     display: block;
-    margin: 20px auto;
-    margin-right: 30px;
+    margin: 15px auto;
 }
+
 #letra {
-
     max-width: 30px;
-    border-radius: 50px;
-    height: auto;
-    text-align: right;
-    display: block;
-  
-   
-}
-.service img{
-    width: 10%;
-    max-width: 300px;
     height: auto;
     display: block;
-    margin: 20px auto;
-    margin-right: 300px;
-    display: flex;
-    align-items: center;
-    
-}
-
-
-
-#uno {
-    background-color: rgb(185, 185, 255);
-}
-
-#dos {
-    background-color: rgb(196, 196, 244);
-}
-
-#tres {
-    background-color: rgb(213, 213, 249);
-}
-
-#cuatro {
-    background-color: rgb(223, 223, 249);
+    margin: 0 auto 10px;
 }
 
 .elb {
@@ -111,7 +73,10 @@
 .ultimo {
     background: rgb(116, 116, 248);
     grid-column: span 4;
+    padding: 20px;
+    text-align: center;
 }
+
 
 @media (max-width: 1024px) {
     .container {
@@ -120,6 +85,8 @@
 
     .hero {
         grid-column: span 2;
+        font-size: 16px;
+        padding: 40px;
     }
 
     .service {
@@ -127,19 +94,17 @@
     }
 
     .elb,
-    .elc {
-        grid-column: span 2;
-    }
-
+    .elc,
     .eld,
     .ultimo {
         grid-column: span 2;
     }
-    .service h4, .service p {
-        display: none; 
-    }
-    .elb h4 , .elc h4, .eld h4, .elb p , .elc p , .eld p {
-        display: none; 
+
+    .service p, .service h4,
+    .elb p, .elb h4,
+    .elc p, .elc h4,
+    .eld p, .eld h4 {
+        font-size: 14px;
     }
 }
 
@@ -155,9 +120,11 @@
     .eld,
     .ultimo {
         grid-column: span 1;
+        font-size: 14px;
+        padding: 20px;
     }
-    .service h4, .service p {
-        display: none; 
+    
+    .service img, #triangulo {
+        width: 90%;
     }
-   
 }
